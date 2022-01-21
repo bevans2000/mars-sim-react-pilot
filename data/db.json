@@ -1,0 +1,31 @@
+{
+  "person": [
+    {
+      "gender": "Male",
+      "task": "Cooking",
+      "building": "Hab 1",
+      "name": "Fred Smith",
+      "type": "person",
+      "id": 1
+    },
+    {
+
+      "name": "Tim Westwood",
+      "type": "person",
+      "id": 2,
+
+      "gender": "Male",
+      "task": "Walking",
+      "building": "Garage 2"
+    },
+    {
+
+      "name": "Tina Turner",
+      "type": "person",
+      "id": 3,
+      "gender": "Female",
+      "task": "Singing",
+      "building": "Garage 1"
+    }
+  ]
+}
