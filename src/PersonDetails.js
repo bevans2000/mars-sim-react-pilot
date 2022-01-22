@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
-import useFetch from "./useFetch";
+import { UnitLink } from "./LinkUtils";
+import useLoadData from "./useLoadData"; 
 
 const PersonDetails = () => {
   const { id } = useParams();
-  const { data: person, error, isPending } = useFetch('person/' + id);
+  const { data: person, error, isPending } = useLoadData(`person/${id}`);
 
   return (
     <div className="unit-details">
@@ -15,6 +16,7 @@ const PersonDetails = () => {
           <p>Gender: { person.gender }</p>
           <p>Task: { person.task }</p>
           <p>Building: { person.building }</p>
+          <p>Settlement: <UnitLink type="settlement" id={person.settlement.id} label={person.settlement.name} /> </p>
         </article>
       )}
     </div>

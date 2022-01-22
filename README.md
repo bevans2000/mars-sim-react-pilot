@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Mars Sim Pilot
+
+This project is a very basic pilot ReactJS app to investigate way the Mars-Sim project could be rendered in a web interface.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -13,6 +16,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
+
+### `json-server --port 8000 --watch .\data\db.json`
+
+Launches a JSON server that presents a RestAPI on (https://localhost:8000). This can be used to emulate a remote server.
 
 ### `npm test`
 

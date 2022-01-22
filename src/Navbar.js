@@ -6,9 +6,10 @@ const Navbar = () => {
       <h1>Mars Sim Pilot</h1>
       <div className="links">
         <Link to="/">Persons</Link>
+        <Link to="/settlements">Settlements</Link>
       </div>
     </nav>
-  );
+  ); 
 }
  
 export default Navbar;
