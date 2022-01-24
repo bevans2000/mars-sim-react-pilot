@@ -48,8 +48,8 @@
   color: var(--mars-fg);
 }
 .content {
-  max-width: 600px;
-  margin: 20px auto;
+  /*max-width: 600px;*/
+  margin: 20px;
   padding: 10px;
 }
 

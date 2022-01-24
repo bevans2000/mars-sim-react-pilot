@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import PersonDetails from './PersonDetails';
 import NotFound from './NotFound';
 import PersonTable from './PersonTable';
@@ -14,6 +14,9 @@ function App() {
         <div className="content">
           <Switch>
             <Route exact path="/">
+              <Redirect to="/persons" />
+            </Route>
+            <Route path="/persons">
               <PersonTable />
             </Route>
             <Route path="/settlements">
