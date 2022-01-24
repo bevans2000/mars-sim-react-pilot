@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/mars-sim-react-pilot/static/css/main.7ade327d.css",
-    "main.js": "/mars-sim-react-pilot/static/js/main.437a8a79.js",
+    "main.js": "/mars-sim-react-pilot/static/js/main.cdf4d60e.js",
     "index.html": "/mars-sim-react-pilot/index.html",
     "main.7ade327d.css.map": "/mars-sim-react-pilot/static/css/main.7ade327d.css.map",
-    "main.437a8a79.js.map": "/mars-sim-react-pilot/static/js/main.437a8a79.js.map"
+    "main.cdf4d60e.js.map": "/mars-sim-react-pilot/static/js/main.cdf4d60e.js.map"
   },
   "entrypoints": [
     "static/css/main.7ade327d.css",
-    "static/js/main.437a8a79.js"
+    "static/js/main.cdf4d60e.js"
   ]
 }
