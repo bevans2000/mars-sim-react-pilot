@@ -16,6 +16,22 @@ const SettlementTable = () => {
           {
             Header: 'Power',
             accessor: 'power',
+          },
+          {
+            Header: 'Oxygen',
+            accessor: 'oxygen',
+          },
+          {
+            Header: 'Hydrogen',
+            accessor: 'hydrogen',
+          },
+          {
+            Header: 'Water',
+            accessor: 'water',
+          },
+          {
+            Header: 'Methane',
+            accessor: 'methane',
           }
         ],
         []

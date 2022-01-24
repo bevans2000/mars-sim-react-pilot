@@ -6,6 +6,10 @@
       "building": "Hab 1",
       "name": "Fred Smith",
       "type": "person",
+      "job" : "Chef",
+      "role": "Chief of Agriculture",
+      "health": "Well",
+      "performance": "Peak",
       "id": 1,
       "settlement" : {
         "name" : "Settlement 1",
@@ -20,6 +24,10 @@
       "gender": "Male",
       "task": "Walking",
       "building": "Garage 2",
+      "job" : "Mathematician",
+      "role": "Computing Specialist",
+      "health": "Poor",
+      "performance": "Low",
       "settlement" : {
         "name" : "Settlement 1",
         "type" : "settlement",
@@ -34,6 +42,10 @@
       "gender": "Female",
       "task": "Singing",
       "building": "Garage 1",
+      "job" : "Biologist",
+      "role": "Commander",
+      "health": "Well",
+      "performance": "Peak",
       "settlement" : {
         "name" : "Settlement 2",
         "type" : "settlement",
@@ -46,19 +58,37 @@
       "name" : "Settlement 1",
       "type" : "settlement",
       "id"   : 31,
-      "authority" : "NASA",
+      "authority" : {
+        "name" : "NASA",
+        "objective" : "Explore Moon",
+        "agenda" : ["Visit the stars", "Explore"]
+      },
       "power" : "1300",
       "persons" : 10,
-      "robots" : 5
+      "robots" : 5,
+      "oxygen" : 12345,
+      "hydrogen" : 876532,
+      "methane": 452525,
+      "water" : 3434,
+      "template": "Alpha Base"
     },
     {
       "name" : "Settlement 2",
       "type" : "settlement",
       "id"   : 32,
-      "authority" : "RKA",
+      "authority" : {
+        "name" : "RKA",
+        "objective" : "Make Life",
+        "agenda" : ["Visit the stars", "Explore"]
+      },
       "power" : "120",
       "persons" : 5,
-      "robots" : 2
+      "robots" : 2,
+      "oxygen" : 785345,
+      "hydrogen" : 77745,
+      "methane": 65432,
+      "water" : 77553,
+      "template" : "Beta Base"
     }
   ]
 }

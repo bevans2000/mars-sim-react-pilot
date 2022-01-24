@@ -15,12 +15,28 @@ const PersonTable = () => {
             Cell: UnitCell
           },
           {
+            Header: 'Job',
+            accessor: 'job',
+          },
+          {
+            Header: 'Role',
+            accessor: 'role',
+          },
+          {
             Header: 'Gender',
             accessor: 'gender',
           },
           {
             Header: 'Building',
             accessor: 'building',
+          },
+          {
+            Header: 'Health',
+            accessor: 'health',
+          },
+          {
+            Header: 'Performance',
+            accessor: 'performance',
           },
         ],
         []

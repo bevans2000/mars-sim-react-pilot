@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 
+export const DETAIL_PANEL = "unit-details";
+
 export function UnitLink(props) {
     const link = "/" + props.type + "/" + props.id;
     return (
-        <span><Link to={link}>{props.label}</Link></span>
+        <span><Link className="unit-link" to={link}>{props.label}</Link></span>
     )  
 }
 

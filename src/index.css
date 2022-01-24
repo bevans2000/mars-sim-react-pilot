@@ -8,11 +8,12 @@
 }
 
 :root {
-  --mars-mid: #ff651e;
-  --mars-fg: #e24f15;
+  --mars-mid: #d62e108e;
+  --mars-fg: #ff0800;
   --mars-bg: #ffffff;
 }
 
+/*
 .navbar {
   padding: 20px;
   display: flex;
@@ -32,41 +33,57 @@
   text-decoration: none;
   padding: 6px;
 }
-.navbar a:hover {
+*/
+
+#mars-nav-brand{
+  color: var(--mars-fg);
+  font-size: 25px;
+}
+
+.unit-link {
+  color: var(--mars-mid);
+  padding: 5px;
+}
+.unit-link:hover {
   color: var(--mars-fg);
 }
 .content {
   max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 10px;
 }
 
-/* blog previews / list */
-.blog-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+.error {
+  color: red;
 }
-.blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+
+/* Unit table */
+.unit-table {
+  border: 2px solid var(--mars-mid);
+  border-collapse: collapse;
+  padding: 5px;
 }
-.blog-preview h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 8px;
+.unit-table th {
+  color: var(--mars-fg);
 }
-.blog-preview a{
-  text-decoration: none;
+.unit-table td {
+  border: 1px solid var(--mars-mid);
 }
 
 /* All Unit details pages */
-.unit-details h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 10px;
-}
+/*
 .unit-details div {
   margin: 20px 0;
+}
+*/
+.unit-details h2 {
+  font-size: 20px;
+  color: var(--mars-fg);
+  margin-bottom: 10px;
+}
+.unit-details label {
+  font-weight: bold;
+  margin-right: 5px;
 }
 .unit-details button {
   background: #f1356d;

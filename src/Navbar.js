@@ -1,15 +1,18 @@
 import { Link } from "react-router-dom";
+import {Navbar,Nav,NavItem } from 'react-bootstrap';
 
-const Navbar = () => {
+const SimNavBar = () => {
   return (
-    <nav className="navbar">
-      <h1>Mars Sim Pilot</h1>
-      <div className="links">
-        <Link to="/">Persons</Link>
-        <Link to="/settlements">Settlements</Link>
-      </div>
-    </nav>
+    <Navbar className="ml-auto">
+      <Navbar.Brand id="mars-nav-brand" >Mars Sim Pilot</Navbar.Brand>
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="me-auto">
+          <NavItem>   <Link className="unit-link" to="/">Persons</Link> </NavItem> 
+          <NavItem>   <Link className="unit-link"   to="/settlements">Settlements</Link> </NavItem> 
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   ); 
 }
  
-export default Navbar;
+export default SimNavBar;

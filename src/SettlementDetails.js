@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { DETAIL_PANEL } from "./LinkUtils";
 import useLoadData from "./useLoadData"; 
 
 const SettlementDetails = () => {
@@ -6,15 +7,15 @@ const SettlementDetails = () => {
   const { data: settlement, error, isPending } = useLoadData(`settlement/${id}`);
 
   return (
-    <div className="unit-details">
+    <div className={DETAIL_PANEL}>
       { isPending && <div>Loading...</div> }
-      { error && <div>{ error }</div> }
+      { error && <div className="error">{ error }</div> }
       { settlement && (
         <article>
           <h2>{ settlement.name }</h2>
-          <p>Reporting Authority: { settlement.authority }</p>
-          <p>Power: { settlement.power } Kw</p>
-          <p>Citizens: { settlement.persons }</p>
+          <p><label>Reporting Authority:</label>{ settlement.authority.name }</p>
+          <p><label>Power:</label>{ settlement.power } Kw</p>
+          <p><label>Citizens:</label>{ settlement.persons }</p>
         </article>
       )}
     </div>

@@ -17,23 +17,17 @@ const UnitTable = (props) => {
     
       return (
         <div>   
-          { error && <div>{ error }</div>}
+          { error && <div className="error">{ error }</div>}
           { rows &&
-              <table {...getTableProps()} style={{ border: 'solid 1px blue' }}>
+              <table {...getTableProps()} className="table table-striped table-responsive-sm">
               <thead>
                   {headerGroups.map(headerGroup => (
                   <tr {...headerGroup.getHeaderGroupProps()}>
                       {headerGroup.headers.map(column => (
                       <th
-                          {...column.getHeaderProps()}
-                          style={{
-                          borderBottom: 'solid 3px red',
-                          background: 'aliceblue',
-                          color: 'black',
-                          fontWeight: 'bold',
-                          }}
+                        {...column.getHeaderProps()}
                       >
-                          {column.render('Header')}
+                        {column.render('Header')}
                       </th>
                       ))}
                   </tr>
@@ -48,11 +42,6 @@ const UnitTable = (props) => {
                           return (
                           <td
                               {...cell.getCellProps()}
-                              style={{
-                              padding: '10px',
-                              border: 'solid 1px gray',
-                              background: 'papayawhip',
-                              }}
                           >
                               {cell.render('Cell')}
                           </td>
