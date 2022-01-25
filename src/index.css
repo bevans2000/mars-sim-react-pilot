@@ -10,30 +10,14 @@
 :root {
   --mars-mid: #d62e108e;
   --mars-fg: #ff0800;
-  --mars-bg: #ffffff;
+  --mars-bg: #ecc5c5fb;
 }
 
-/*
-.navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid var(--mars-mid);
+
+.mars-navbar {
+  margin-left: 10px;
+  background: var(--mars-bg);
 }
-.navbar h1 {
-  color: var(--mars-fg);
-}
-.navbar .links {
-  margin-left: auto;
-}
-.navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
-*/
 
 #mars-nav-brand{
   color: var(--mars-fg);
@@ -49,8 +33,7 @@
 }
 .content {
   /*max-width: 600px;*/
-  margin: 20px;
-  padding: 10px;
+  margin: 10px;
 }
 
 .error {
@@ -76,21 +59,14 @@
   margin: 20px 0;
 }
 */
-.unit-details h2 {
+.detail-heading {
   font-size: 20px;
   color: var(--mars-fg);
   margin-bottom: 10px;
 }
-.unit-details label {
+.detail-panel label {
   font-weight: bold;
   margin-right: 5px;
 }
-.unit-details button {
-  background: #f1356d;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
+
 

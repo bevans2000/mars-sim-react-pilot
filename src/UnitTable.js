@@ -16,10 +16,10 @@ const UnitTable = (props) => {
       } = useTable({ columns, data });
     
       return (
-        <div>   
+        <div className="table-responsive">   
           { error && <div className="error">{ error }</div>}
           { rows &&
-              <table {...getTableProps()} className="table table-striped table-responsive-sm">
+              <table {...getTableProps()} className="table table-striped table-sm">
               <thead>
                   {headerGroups.map(headerGroup => (
                   <tr {...headerGroup.getHeaderGroupProps()}>

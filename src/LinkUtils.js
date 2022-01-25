@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
-export const DETAIL_PANEL = "unit-details";
+export const DETAIL_PANEL = "detail-panel";
+export const DETAIL_HEADING = "detail-heading";
 
 export function UnitLink(props) {
     const link = "/" + props.type + "/" + props.id;

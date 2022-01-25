@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { DETAIL_PANEL } from "./LinkUtils";
+import { DETAIL_HEADING, DETAIL_PANEL } from "./LinkUtils";
 import useLoadData from "./useLoadData"; 
 
 const SettlementDetails = () => {
@@ -12,7 +12,7 @@ const SettlementDetails = () => {
       { error && <div className="error">{ error }</div> }
       { settlement && (
         <article>
-          <h2>{ settlement.name }</h2>
+          <h2 className={DETAIL_HEADING}>{ settlement.name }</h2>
           <p><label>Reporting Authority:</label>{ settlement.authority.name }</p>
           <p><label>Power:</label>{ settlement.power } Kw</p>
           <p><label>Citizens:</label>{ settlement.persons }</p>

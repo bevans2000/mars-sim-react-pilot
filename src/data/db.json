@@ -11,6 +11,11 @@
       "health": "Well",
       "performance": "Peak",
       "id": 1,
+      "authority" : {
+        "name" : "NASA",
+        "objective" : "Explore Moon",
+        "agenda" : ["Visit the stars", "Explore"]
+      },
       "settlement" : {
         "name" : "Settlement 1",
         "type" : "settlement",
@@ -28,6 +33,11 @@
       "role": "Computing Specialist",
       "health": "Poor",
       "performance": "Low",
+      "authority" : {
+        "name" : "NASA",
+        "objective" : "Explore Moon",
+        "agenda" : ["Visit the stars", "Explore"]
+      },
       "settlement" : {
         "name" : "Settlement 1",
         "type" : "settlement",
@@ -35,7 +45,6 @@
       }
     },
     {
-
       "name": "Tina Turner",
       "type": "person",
       "id": 3,
@@ -50,6 +59,11 @@
         "name" : "Settlement 2",
         "type" : "settlement",
         "id"   : 32
+      },
+      "authority" : {
+        "name" : "RKA",
+        "objective" : "Make Life",
+        "agenda" : ["Visit the stars", "Explore"]
       }
     }
   ],

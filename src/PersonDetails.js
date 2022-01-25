@@ -1,5 +1,6 @@
+import { Accordion } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import { UnitLink, DETAIL_TITLE, DETAIL_PANEL, DETAIL_LABEL, DETAIL_VALUE } from "./LinkUtils";
+import { UnitLink, DETAIL_PANEL, DETAIL_HEADING} from "./LinkUtils";
 import useLoadData from "./useLoadData"; 
 
 const PersonDetails = () => {
@@ -11,16 +12,35 @@ const PersonDetails = () => {
       { isPending && <div>Loading...</div> }
       { error && <div className="error">{ error }</div> }
       { person && (
-        <article>
-          <h2>{ person.name }</h2>
-          <p><label>Gender:</label>{ person.gender }</p>
-          <p><label>Task:</label>{ person.task }</p>
-          <p><label>Building:</label>{ person.building }</p>
-          <p><label>Settlement:</label><UnitLink type="settlement" id={person.settlement.id} label={person.settlement.name} /> </p>
-        </article>
+        <div>
+        <h2 className={DETAIL_HEADING}>{ person.name }</h2>
+
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>General</Accordion.Header>
+            <Accordion.Body>
+              <p><label>Gender:</label>{ person.gender }</p>
+              <p><label>Building:</label>{ person.building }</p>
+              <p><label>Settlement:</label><UnitLink type="settlement" id={person.settlement.id} label={person.settlement.name} /> </p>
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Task</Accordion.Header>
+            <Accordion.Body>
+              <p><label>Task:</label>{ person.task }</p>
+            </Accordion.Body>
+          </Accordion.Item>   
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>Authority {person.authority.name}</Accordion.Header>
+            <Accordion.Body>
+              <p><label>Objective:</label>{ person.authority.objective }</p>
+            </Accordion.Body>
+          </Accordion.Item>          
+        </Accordion>
+        </div>
       )}
     </div>
   ); 
 }
- 
+
 export default PersonDetails;
