@@ -21,7 +21,7 @@ const PersonDetails = () => {
             <Accordion.Body>
               <p><label>Gender:</label>{ person.gender }</p>
               <p><label>Building:</label>{ person.building }</p>
-              <p><label>Settlement:</label><UnitLink type="settlement" id={person.settlement.id} label={person.settlement.name} /> </p>
+              <p><label>Settlement:</label><UnitLink reference={person.settlement} /> </p>
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">

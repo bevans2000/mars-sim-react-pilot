@@ -10,8 +10,6 @@ const PersonTable = () => {
           {
             Header: 'Name',
             accessor: 'name',
-            unitTypeProp: 'type',
-            unitIdProp: 'id',
             Cell: UnitCell
           },
           {

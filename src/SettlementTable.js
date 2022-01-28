@@ -9,8 +9,6 @@ const SettlementTable = () => {
           {
             Header: 'Name',
             accessor: 'name',
-            unitTypeProp: 'type',
-            unitIdProp: 'id',
             Cell: UnitCell
           },
           {

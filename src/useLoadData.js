@@ -8,7 +8,7 @@ const useLoadDataRemote = (url, initialData) => {
   const [data, setData] = useState(initialData);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
-  const serverURL = 'http://localhost:8000/';
+  const serverURL = '/';
 
   useEffect(() => {
     const abortCont = new AbortController();
@@ -97,7 +97,7 @@ const useLoadDataLocal = (url, initialData) => {
 //
 const useLoadData = (url, initialData) => {
     // Change this to useLoadDatRemote for remote server
-    const {data, isPending, error} = useLoadDataLocal(url, initialData);
+    const {data, isPending, error} = useLoadDataRemote(url, initialData);
 
     return {data, isPending, error};
 }

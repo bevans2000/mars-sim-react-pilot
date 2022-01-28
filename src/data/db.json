@@ -10,7 +10,7 @@
       "role": "Chief of Agriculture",
       "health": "Well",
       "performance": "Peak",
-      "id": 1,
+      "identifier": 1,
       "authority" : {
         "name" : "NASA",
         "objective" : "Explore Moon",
@@ -19,13 +19,13 @@
       "settlement" : {
         "name" : "Settlement 1",
         "type" : "settlement",
-        "id"   : 31
+        "identifier"   : 31
       }
     },
     {
       "name": "Tim Westwood",
       "type": "person",
-      "id": 2,
+      "identifier": 2,
       "gender": "Male",
       "task": "Walking",
       "building": "Garage 2",
@@ -41,13 +41,13 @@
       "settlement" : {
         "name" : "Settlement 1",
         "type" : "settlement",
-        "id"   : 31
+        "identifier"   : 31
       }
     },
     {
       "name": "Tina Turner",
       "type": "person",
-      "id": 3,
+      "identifier": 3,
       "gender": "Female",
       "task": "Singing",
       "building": "Garage 1",
@@ -58,7 +58,7 @@
       "settlement" : {
         "name" : "Settlement 2",
         "type" : "settlement",
-        "id"   : 32
+        "identifier"   : 32
       },
       "authority" : {
         "name" : "RKA",
@@ -71,7 +71,7 @@
     {
       "name" : "Settlement 1",
       "type" : "settlement",
-      "id"   : 31,
+      "identifier"   : 31,
       "authority" : {
         "name" : "NASA",
         "objective" : "Explore Moon",
@@ -89,7 +89,7 @@
     {
       "name" : "Settlement 2",
       "type" : "settlement",
-      "id"   : 32,
+      "identifier"   : 32,
       "authority" : {
         "name" : "RKA",
         "objective" : "Make Life",
